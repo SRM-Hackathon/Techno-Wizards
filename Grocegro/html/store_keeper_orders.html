@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="css/store_keeper.css">
+    <link rel="stylesheet" href="css/store_keeper_home.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/glass.css">
+
+    <title>Orders</title>
+</head>
+<body>
+    <div id="app">
+        <div id="nav-bar" class="glass">
+            <div id="logo">
+                <img src="images/icon.png">
+                <h1>GroceGo</h1>
+            </div>
+            <hr>
+            <div id="menu">
+                <a id="home" href="store_keeper_home.html" class="selectedglass">Home</a>
+                <a id="orders" href="#" >Orders</a>
+                <a id="product" href="#" >Product</a>
+                <a id="home" href="#" >Account</a>
+            </div>
+            <button class="glass">Log Out</button>
+        </div>   
+        
+        <div id="content">
+            <div id="store_logo">
+                <img src="images/store_logo.jpg">
+                <h1 id="store_name">Tesla</h1>
+            </div>
+            <select id="filter_selector"  name="filter_selector">
+                <option value="1" selected>Retailer</option>
+                <option value="2">Farmer</option>
+            </select>            
+        </div>
+    </div>
+</body>
+</html>

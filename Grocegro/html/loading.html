@@ -1,0 +1,28 @@
+<html>
+<head>
+    <style>
+        #page{
+            display: none;
+        }
+        #loading{
+            display: block;
+        }
+    </style>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("page").style.display = "block";
+            document.getElementById("loading").style.display = "none";
+        }
+    </script>
+</head>
+
+<body onload="myFunction()">
+    <div id="page">
+    </div>
+
+    
+    <div id="loading">
+    </div>
+</body>
+</html>
