@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="../css/store_keeper.css">
+    <link rel="stylesheet" href="../css/store_keeper_home.css">
+    <link rel="stylesheet" href="../css/store_keeper_orders.css">
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="stylesheet" href="../css/glass.css">
+
+    <title>Orders</title>
+</head>
+<body>
+    <div id="app">
+        <div id="nav-bar" class="glass">
+            <div id="logo">
+                <img src="../images/icon.png">
+                <h1>GroceGo</h1>
+            </div>
+            <hr>
+            <div id="menu">
+                <a id="home" href="store_keeper_home.html" >Home</a>
+                <a id="orders" class="selectedglass">Orders</a>
+                <a id="product" href="store_keeper_products.html" >Product</a>
+                <a id="home" href="store_keeper_account.html" >Account</a>
+            </div>
+            <button class="glass">Log Out</button>
+        </div>   
+        
+        <div id="content">
+            <div id="store_logo">
+                <img src="../images/store_logo.jpg">
+                <h1 id="store_name">Tesla</h1>
+            </div>
+            <div id="filter_selector">
+                <h2>Currently Showing</h2>
+                <input type="radio" checked name="filter" value="0" selected>All
+                <input type="radio" name="filter" value="0">Accepted
+                <input type="radio" name="filter" value="0">Pending
+                <input type="radio" name="filter" value="0">Rejected
+            </div>
+
+            <div id="products_container">
+                <div id="products">
+                    <div id="product_content" class="glass product_glass">
+                        <div id="order_head">
+                            <h3 style="margin-left: 2%;"> Order Id : 1234</h3>
+                            <h3 style="margin-right: 2%;">23/03/2021</h3>
+                        </div>
+                        <h3 style="margin:1% auto 1% 2%; text-decoration: underline;">Cricket Bats</h3>
+                        <div id="details">
+                            <img src="../images/play_store.png">
+                            <div id="item_price">
+                                <h3>Count : 4</h3>
+                                <h3>Price : Rs 2000</h3>
+                            </div>
+                            <h3>Online payment</h3>
+                        </div>   
+                    </div>
+
+                    <div id="accept_reject" class="glass product_glass2">
+                        <button style="background-color: rgba(0, 255, 0, 0.158); border-radius: 0 10px 0 0;"></button>
+                        <button style="background-color: rgba(255, 0, 0, 0.459);  border-radius: 0 0 10px 0;"></button>                    
+                    </div>
+                </div>
+
+                <div id="products">
+                    <div id="product_content" class="glass product_glass">
+                        <div id="order_head">
+                            <h3 style="margin-left: 2%;"> Order Id : 5678</h3>
+                            <h3 style="margin-right: 2%;">21/03/2021</h3>
+                        </div>
+                        <h3 style="margin:1% auto 1% 2%; text-decoration: underline;">Books</h3>
+                        <div id="details">
+                            <img src="../images/play_store.png">
+                            <div id="item_price">
+                                <h3>Count : 8</h3>
+                                <h3>Price : Rs 400</h3>
+                            </div>
+                            <h3>COD</h3>
+                        </div>   
+                    </div>
+                <div id="accept_reject" class="glass product_glass2">
+                    <button style="background-color: rgba(0, 255, 0, 0.158); border-radius: 0 10px 0 0;"></button>
+                    <button style="background-color: rgba(255, 0, 0, 0.459);  border-radius: 0 0 10px 0;"></button>                    
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="../css/store_keeper.css">
+    <!-- <link rel="stylesheet" href="../css/store_keeper_home.css"> -->
+    <link rel="stylesheet" href="../css/store_keeper_account.css">
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="stylesheet" href="../css/glass.css">
+
+
+    <title>Account</title>
+</head>
+<body>
+    <div id="app">
+        <div id="nav-bar" class="glass">
+            <div id="logo">
+                <img src="../images/icon.png">
+                <h1>GroceGo</h1>
+            </div>
+            <hr>
+            <div id="menu">
+                <a id="home" href="store_keeper_home.html" >Home</a>
+                <a id="orders" href="store_keeper_orders.html">Orders</a>
+                <a id="product" href="store_keeper_products.html" >Product</a>
+                <a id="home" class="selectedglass" >Account</a>
+            </div>
+            <button class="glass">Log Out</button>
+        </div>   
+
+        <div id="content">
+            <h1>Edit Account Details</h1>
+            <img src="../images/store_logo.jpg">
+            <form>
+                <input type="text" placeholder="Store name" value="Tesla">
+                <input type="text" value="shop_link_here" disabled>
+                <input type="text" value="Cars" placeholder="Category">
+                <input type="submit" value="Save Changes">
+            </form>
+        </div>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+#all_products
+{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 0;    
+}
+#product
+{
+    display: flex;
+    width: 60%;
+    justify-self: center;
+    align-items: center;
+}
+
+#product img
+{
+    width: 20%;
+    height: 50%;
+    margin-left: 3%;
+}
+
+#product_details
+{
+    margin-left: 4%;
+}
+
+#head1
+{
+    display: flex;
+    margin:5% 10% 5% 5% ;
+    justify-content: space-between;
+}
+
+#head1 button
+{
+    font-size: 20px;
+    border: 0;
+}

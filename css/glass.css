@@ -1,0 +1,28 @@
+.glass
+{
+    /* text-align: center; */
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.selectedglass
+{
+    /* text-align: center; */
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    color: white;
+    font-family: 'Montserrat', sans-serif;    
+}
+
+.product_glass
+{
+    border-radius: 10px 0px 0px 10px;
+}
+
+.product_glass2
+{
+    border-radius: 0px 10px 10px 0px;
+}

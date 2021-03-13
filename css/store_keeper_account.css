@@ -1,0 +1,29 @@
+#content img
+{
+    width: 10%;
+    margin-bottom: 5%;
+}
+
+/* #content form
+{
+    width: 100%;
+    margin-left: 50%;
+ transform: translate(-50%);
+} */
+
+#content form input 
+{
+    color: black;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10%;
+}
+
+#content
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
