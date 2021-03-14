@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <Button
+            android:id="@+id/per_day"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/spinner_background"
+            android:scrollbarSize="30dp"
+            android:text="Per day"
+            android:textAlignment="center"
+
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dayamount"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/per_week"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/spinner_background"
+            android:scrollbarSize="30dp"
+            android:text="Per week"
+            android:textAlignment="center"
+            android:textSize="10dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/per_month"
+            app:layout_constraintHorizontal_bias="0.095"
+            app:layout_constraintStart_toEndOf="@+id/per_day"
+            app:layout_constraintTop_toBottomOf="@+id/dayamount"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="5dp" />
+
+        <Button
+            android:id="@+id/per_month"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/spinner_background"
+            android:scrollbarSize="30dp"
+            android:text="Per Month"
+            android:textAlignment="center"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.806"
+            app:layout_constraintStart_toEndOf="@+id/per_week"
+            app:layout_constraintTop_toBottomOf="@+id/dayamount"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="408dp"
+            android:layout_height="46dp"
+
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/option_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="372dp"
+                android:layout_marginLeft="372dp"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/option_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </RelativeLayout>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:overScrollMode="never"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:foregroundGravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+
+        <LinearLayout
+            android:id="@+id/Slidedots"
+            android:layout_width="409dp"
+            android:layout_height="38dp"
+
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewPager" />
+
+
+        <TextView
+            android:id="@+id/dtitle"
+            android:layout_width="169dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:text="Samsung Strom smart TV "
+            android:textColor="#000000"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Slidedots"
+            android:layout_marginLeft="16dp" />
+
+
+        <TextView
+            android:id="@+id/dayamount"
+            android:layout_width="164dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="104dp"
+            android:text="  choice of days "
+            android:textColor="#828080"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Slidedots"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/sellingpricetext"
+            android:layout_width="144dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="36dp"
+
+            android:text="  Selling Price"
+            android:textColor="#000000"
+            android:textSize="18dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.016"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/per_day"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/sellingpriceamount"
+            android:layout_width="144dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="36dp"
+
+            android:text="  ₹19999"
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.995"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/per_month"
+            android:layout_marginLeft="20dp" />
+
+
+        <TextView
+            android:id="@+id/priceamount"
+            android:layout_width="123dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="28dp"
+
+            android:text="1100"
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.718"
+            app:layout_constraintStart_toEndOf="@+id/dtitle"
+            app:layout_constraintTop_toBottomOf="@+id/Slidedots" />
+
+        <TextView
+
+            android:id="@+id/description"
+            android:layout_width="156dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="36dp"
+
+            android:text="  Product Details"
+            android:textColor="#656161"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calender" />
+
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="330dp"
+            android:layout_height="91dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/rounded_cornerblack"
+            android:textColor="#656161"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.606"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginRight="15dp" />
+
+        <LinearLayout
+            android:layout_width="363dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/about">
+
+            <TextView
+                android:id="@+id/finalamountdetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹209 "
+                android:textColor="#FB3E3E"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/finalamount1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/mo for "
+                android:textColor="#FB3E3E"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/finalamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24 months "
+                android:textColor="#27DEA1"
+                android:textSize="12dp" />
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:background="@drawable/button_corner"
+                android:text="Book your Item"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp"
+                android:layout_marginLeft="70dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/calender"
+            android:layout_width="49dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/chat_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sellingpriceamount"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="189dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:text="date"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/calender"
+            app:layout_constraintTop_toBottomOf="@+id/sellingpriceamount"
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="center_horizontal" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
