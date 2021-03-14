@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "395516024194",
+    "firebase_url": "https://firstfund-f7507.firebaseio.com",
+    "project_id": "firstfund-f7507",
+    "storage_bucket": "firstfund-f7507.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395516024194:android:a68d618ab9a3ddd45feb9b",
+        "android_client_info": {
+          "package_name": "com.example.first_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395516024194-sfttoic80sn12tuqu5lioeot9vvmgt68.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOgth-n2ssYKbOMyl8VNEIXNN-utidrug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395516024194-sfttoic80sn12tuqu5lioeot9vvmgt68.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395516024194:android:c376911e3b41c4205feb9b",
+        "android_client_info": {
+          "package_name": "com.example.renty1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395516024194-sfttoic80sn12tuqu5lioeot9vvmgt68.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOgth-n2ssYKbOMyl8VNEIXNN-utidrug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395516024194-sfttoic80sn12tuqu5lioeot9vvmgt68.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
